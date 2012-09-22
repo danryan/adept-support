@@ -28,7 +28,6 @@ module Adept
           line.gsub!("\r", "")
           current_line += 1
 
-          puts line
           next if line =~ regex[:comment]
 
           # if previous_line && previous_line.strip.length == 0 && line !~ regex[:continuation_line]
@@ -51,7 +50,7 @@ module Adept
           elsif matches = line.match(regex[:simple_field])
             name, value = matches.to_a[1,2]
 
-            name.from_dpkg_field!
+            name = name.from_dpkg_field.to_sym
 
             if current_field && !is_multiline
               stanza[current_field] = stanza[current_field] ? stanza[current_field].strip : ""
