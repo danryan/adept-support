@@ -1,4 +1,5 @@
 require 'mixlib/shellout'
+require 'adept/support/core_ext/string'
 
 module Adept
   module Support
