@@ -46,11 +46,3 @@ repo.add("lucid", "/path/to/postgresql-client-9.0_9.0.5-1~lucid_amd64.deb")
 repo.list("lucid")
 # => lucid|main|amd64: postgresql-client-9.0 9.0.5-1~lucid
 ```
-
-## Contributing
-
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request

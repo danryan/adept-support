@@ -1,0 +1,11 @@
+Package: foo
+Version: 1.0.0-1
+License: MIT License
+Vendor: Example, Inc.
+Architecture: amd64
+Maintainer: John Doe <jdoe@example.com>
+Installed-Size: 1024
+Section: Utilities
+Priority: extra
+Homepage: https://example.com/foo
+Description: An example package
