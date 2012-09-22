@@ -51,6 +51,8 @@ module Adept
           elsif matches = line.match(regex[:simple_field])
             name, value = matches.to_a[1,2]
 
+            name.from_dpkg_field!
+
             if current_field && !is_multiline
               stanza[current_field] = stanza[current_field] ? stanza[current_field].strip : ""
               is_multiline = false
