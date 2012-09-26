@@ -41,7 +41,7 @@ module Adept
           if line =~ regex[:blank_line]
             warn "Blank continuation line without originating field"
             is_multiline = true
-            stanza[current_field] += "\n"
+            stanza[current_field] += "\n ."
           elsif matches = line.match(regex[:continuation_line])
             warn "Continuation line without originating field." unless current_field
             is_multiline = true
