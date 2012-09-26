@@ -1,0 +1,23 @@
+Package: ruby1.9.1
+Version: 1.9.3.194-1
+Architecture: amd64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: akira yamada <akira@debian.org>
+Installed-Size: 252
+Depends: libruby1.9.1 (= 1.9.3.194-1), libc6 (>= 2.2.5)
+Suggests: ruby1.9.1-examples, ri1.9.1, graphviz, ruby1.9.1-dev, ruby-switch
+Conflicts: irb1.9.1 (<< 1.9.1.378-2~), rdoc1.9.1 (<< 1.9.1.378-2~), ri (<= 4.5), ri1.9.1 (<< 1.9.2.180-3~), ruby (<= 4.5), rubygems1.9.1
+Replaces: irb1.9.1, rdoc1.9.1, rubygems1.9.1
+Provides: irb1.9.1, rdoc1.9.1, ruby-interpreter, rubygems1.9.1
+Section: ruby
+Priority: optional
+Homepage: http://www.ruby-lang.org/
+Description: Interpreter of object-oriented scripting language Ruby
+ Ruby is the interpreted scripting language for quick and easy
+ object-oriented programming.  It has many features to process text
+ files and to do system management tasks (as in perl).  It is simple,
+ straight-forward, and extensible.
+ .
+ In the name of this package, `1.9.1' indicates the Ruby library
+ compatibility version. This package currently provides the `1.9.3'
+ branch of Ruby, which is compatible with the `1.9.1' branch.

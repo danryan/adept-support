@@ -74,7 +74,8 @@ module Adept
         :maintainer,
         :description,
         :homepage,
-        :built_using
+        :built_using,
+        :license
       ]
 
       SOURCE_CONTROL_FIELDS = [
