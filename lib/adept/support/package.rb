@@ -3,11 +3,29 @@ require 'pathname'
 module Adept
   module Support
     class Package
-      VALID_FIELDS = %w[
-      package source version section priority architecture essential 
-      depends recommends suggests enhances pre_depends breaks conflicts provides replaces 
-      build_depends build_conflicts build_depends_indep build_conflicts_indep built_using
-    ]
+      VALID_FIELDS = [
+        :package,
+        :source,
+        :version,
+        :section,
+        :priority,
+        :architecture,
+        :essential,
+        :depends,
+        :recommends,
+        :suggests,
+        :enhances,
+        :pre_depends,
+        :breaks,
+        :conflicts,
+        :provides,
+        :replaces,
+        :build_depends,
+        :build_depends_indep,
+        :build_conflicts,
+        :build_conflicts_indep,
+        :built_using
+      ]
 
       class_eval do
         VALID_FIELDS.each do |field|
