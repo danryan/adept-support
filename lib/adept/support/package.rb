@@ -89,7 +89,7 @@ module Adept
         *VCS_FIELDS,
         :standards_version,
         *BUILD_FIELDS,
-        *CHECKSUMS_FIELDS
+        *CHECKSUMS_FIELDS,
         :files
       ]
 
@@ -121,7 +121,7 @@ module Adept
         *CONTROL_FIELDS,
         *SOURCE_CONTROL_FIELDS,
         *CHANGES_FIELDS
-      ].flatten!.compact!.uniq!
+      ].flatten.compact.uniq
 
       class_eval do
         VALID_FIELDS.each do |field|
