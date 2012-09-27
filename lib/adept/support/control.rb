@@ -2,7 +2,7 @@ module Adept
   module Support
     class Control
 
-      attr_accessor :file, :stanza
+      attr_accessor :file, :stanza, :raw
 
       def regex
         @regex ||= {}
@@ -15,6 +15,7 @@ module Adept
 
       def initialize(path)
         @file = File.open(path)
+        @raw = File.open(path).read
         @stanza = {}
       end
 
